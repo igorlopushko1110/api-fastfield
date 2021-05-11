@@ -72,12 +72,12 @@ foreach ($arr as $key => $value) {
 			$formSubmit->app_version = $value["deviceMetaData"]["appVersion"];
 			$formSubmit->device = $value["deviceMetaData"]["device"];
 			
-			$metaData = json_decode($value, true);			
-			$formSubmit->form_start = $value->startFormTimeStamp;
-			$formSubmit->form_end = $value->endFormTimeStamp;
-			$formSubmit->app_type = $value->deviceMetaData->appType;
-			$formSubmit->app_version = $value->deviceMetaData->appVersion;
-			$formSubmit->device = json_encode($metaData["deviceMetaData"]); //->device;
+			// $metaData = json_decode($value, true);			
+			// $formSubmit->form_start = $value->startFormTimeStamp;
+			// $formSubmit->form_end = $value->endFormTimeStamp;
+			// $formSubmit->app_type = $value->deviceMetaData->appType;
+			// $formSubmit->app_version = $value->deviceMetaData->appVersion;
+			// $formSubmit->device = json_encode($metaData["deviceMetaData"]); //->device;
 		}
 		else{
 			$formSubmit->{$key} = $value; 			
