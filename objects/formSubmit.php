@@ -41,19 +41,19 @@ class FormSubmit{
         $stmt = $this->conn->prepare($query);
     
         // sanitize
-         $this->submitid=htmlspecialchars(strip_tags($this->submitid));
-         $this->submissionid=htmlspecialchars(strip_tags($this->submissionid));		
-         $this->account_id=htmlspecialchars(strip_tags($this->account_id));
-         $this->form_id=htmlspecialchars(strip_tags($this->form_id));
-         $this->dispatch_id=htmlspecialchars(strip_tags($this->dispatch_id));
-         $this->resubmit=htmlspecialchars(strip_tags($this->resubmit));
-         $this->user_id=htmlspecialchars(strip_tags($this->user_id));
-         $this->username=htmlspecialchars(strip_tags($this->username));
-         $this->form_start=htmlspecialchars(strip_tags($this->form_start));
-         $this->form_end=htmlspecialchars(strip_tags($this->form_end));
-         $this->app_type=htmlspecialchars(strip_tags($this->app_type));
-         $this->app_version=htmlspecialchars(strip_tags($this->app_version));
-         $this->device=htmlspecialchars(strip_tags($this->device));
+        // $this->submitid=htmlspecialchars(strip_tags($this->submitid));
+        // $this->submissionid=htmlspecialchars(strip_tags($this->submissionid));		
+        // $this->account_id=htmlspecialchars(strip_tags($this->account_id));
+        // $this->form_id=htmlspecialchars(strip_tags($this->form_id));
+        // $this->dispatch_id=htmlspecialchars(strip_tags($this->dispatch_id));
+        // $this->resubmit=htmlspecialchars(strip_tags($this->resubmit));
+        // $this->user_id=htmlspecialchars(strip_tags($this->user_id));
+        // $this->username=htmlspecialchars(strip_tags($this->username));
+        // $this->form_start=htmlspecialchars(strip_tags($this->form_start));
+        // $this->form_end=htmlspecialchars(strip_tags($this->form_end));
+        // $this->app_type=htmlspecialchars(strip_tags($this->app_type));
+        // $this->app_version=htmlspecialchars(strip_tags($this->app_version));
+        // $this->device=htmlspecialchars(strip_tags($this->device));
     
         // bind values
         $stmt->bindParam(":submit_id", $this->submitId);
